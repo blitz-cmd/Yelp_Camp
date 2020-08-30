@@ -28,12 +28,9 @@
 		<p><strong><%=comment.author.username%></strong>
 			<br>
 			<%=comment.text%>
-			<%if(currentUser && camp.author.id.equals(currentUser._id)){%>
-			<!-- <a class="fas fa-trash" ></a> -->			
-			<a style="color:black" class="fas fa-edit" href="/campground/<%=camp._id%>/comments/<%=comment._id%>"></a>
-		<form action="/campground/<%=camp._id%>/comments/<%=comment.id%>?_method=DELETE" method="post">
-							<input type="submit" class="btn fas fa-trash" value="&#xf1f8;"></form><%}%>
-		
+			
+			<!-- check user code -->
+			
 		<hr></p><%})%>
 		
 		<div id="uii">
