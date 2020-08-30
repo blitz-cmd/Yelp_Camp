@@ -15,7 +15,15 @@ var flash=require("connect-flash");
 app.use(bp.urlencoded({extended:true}));
 app.use(es());
 // mongoose.connect("mongodb://localhost:27017/yelp_camp",{useNewUrlParser:true});
-mongoose.connect("mongodb+srv://yelpcamp:qweasd@blitz.ttb0c.mongodb.net/yelpcamp?retryWrites=true&w=majority");
+mongoose.connect("mongodb+srv://yelpcamp:qweasd@blitz.ttb0c.mongodb.net/yelpcamp?retryWrites=true&w=majority",{
+	useNewUrlParser: true,
+	useCreateIndex: true
+}).then(() =>{
+	console.log("Connected to DB");
+}).catch(errr =>{
+	console.log("Error",err.message);
+});
+
 
 app.use(methodoverride("_method"));
 
