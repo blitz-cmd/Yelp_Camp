@@ -368,8 +368,14 @@ function checkcomownership(req,res,next){
 }
 
 
-app.listen(3000,()=>{
-		   console.log('YelpCamp Server started');
+// app.listen(3000,()=>{
+// 		   console.log('YelpCamp Server started');
+// });
+
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Our yelpcamp is running on port ${ PORT }`);
 });
 
 
