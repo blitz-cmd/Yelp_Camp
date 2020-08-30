@@ -1,0 +1,24 @@
+<%- include("partials/header") %>
+
+<div class="container">
+<form action="/campground" method="post">
+  <div class="form-group">
+    	<label>Campsite</label>
+    	<input type="text" class="form-control" name="name">
+  </div>
+  <div class="form-group">
+    	<label>Image Link</label>
+    	<input type="text" class="form-control" name="images">
+  </div>
+  <div class="form-group">
+    	<label>Description</label>
+	  	<textarea class="form-control" name="data" rows="5"></textarea>
+    	<!-- <input type="text" class="form-control" name="data" placeholder="data"> -->
+  </div>
+  <button>
+		Add Camp
+  </button> 
+<a href="/">Exit</a>
+	</form></div>
+
+<%- include("partials/footer") %>

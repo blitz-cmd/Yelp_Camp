@@ -1,0 +1,257 @@
+.ff{
+	padding-top:20px;
+	background-color:red;
+	margin-top:50px;
+	padding-bottom:50px;
+	margin-bottom:20px;
+}
+
+.jd{
+	background-color:green;
+	padding-top:20px;
+	padding-bottom:30px;
+}
+
+.kg{
+	display:inline;
+}
+
+.dd{
+	color:white;
+	padding-top:8px;
+	margin-right:10px;
+}
+
+#im {
+	/* display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; */
+	text-align:center;
+	margin:4%;
+	
+    border: 1px solid #555;
+	padding:0;
+	width:100%;
+	padding-bottom:10px;
+	 /* border-width:5px 5px 5px 5px; */
+}
+
+imgs{
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+	
+}
+
+#q{
+	margin-top:30px;
+	font-family:Recursive;
+}
+
+#w{
+	text-shadow: 5px 3px 10px red,-5px -3px 10px black;
+}
+
+#e{
+	width: 100%;
+  padding-right: 10%;
+  padding-left: 10%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row{
+	    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;flex-wrap: wrap;
+	display: flex;
+}
+
+#r{
+	/* text-align:center; */
+	/* display:inline; */
+	color:red;
+	display:flex;
+	  flex-wrap: nowrap;
+	align-content:center;
+}
+#qw{
+	height:300px;
+	width:500px;
+}
+
+#asd{
+	display:inline;
+	position:absolute;
+	left:70%;
+}
+#as{
+	position:absolute;
+	right:70%;
+}
+
+.footer {
+  /* position: fixed; */
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+margin-bottom:0px;
+	/* margin-top:50px; */
+	padding-top:20px;
+	padding-bottom:10px;
+	font-family: 'Pacifico', cursive;
+}
+
+.b{
+	background-color:black;
+	color:white;
+	width: 100%;
+	padding-top:100px;
+	padding-bottom:100px;
+	margin-top:80px;
+	justify-content:space-around;
+}
+
+
+.thumbnail img{
+	width:100%;
+}
+
+/* .top{
+	float:right;
+} */
+
+
+#aq{
+	  border: 4px solid #555;position:relative;top:176px;left: -81px;
+
+}
+
+
+
+.container{
+	margin-top:10px;
+}
+
+#po{
+	  border: 5px solid #555;
+	height:250px;
+	width:400px;
+	/* overflow:hidden; */
+	
+
+}
+
+#lk1{
+	padding-top:10px;
+	padding-left:80px;
+	font-family: 'Lobster', cursive;
+	font-weight:bold;
+	font-size:20px;
+	color:black;
+}
+
+.class{
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+	width: 50%;
+}
+
+#lk2{
+	/* width: 300px; */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
+	padding-left:80px;
+	padding-right:10px;
+	font-family: 'Lato', sans-serif;
+}
+
+
+#lk3{
+	
+	
+	float:right;
+	padding-right:20px;
+}
+
+#gf{
+	position:relative;
+	/* padding-left: 131px;     */
+}
+
+#lkj{
+	color:bl;
+	/* margin-bottom:10px; */
+	padding-left:60px;padding-top:20px;
+	font-family: 'Permanent Marker', cursive;
+}
+
+#qy{
+	background-image:url("https://lh3.googleusercontent.com/Xf8t0hj0KPTJ-arDBz9pbA4v-yGPYre_5gEHA-EcNgazVU7Nzdzvvn9A7DA7E3hWHcRJxPJrt8VttrCrJgLgszDb3LYVZEAfy-x1O-4DjEBjLCW-aYHodEMqwcHD7fKYgM0y_Etq6x4A2erSUq-nxm7L43fhmQcDHQLhb-PdDJZbKMrovM1wHWZUFQp-vzdXjH0Jw0TvTiZ8HllNm90DtXZIwQPwJiyqkiVZV-JYqIJVLMvwvmP9cSEL7rktaKAg4_XEqw5_PONKorFk3tq5-qMaKEXVonDT7UVyNbUfhLH78QiUqykZunsV5EdFyIncYy4Au7oZ1X2fo7ktvydXC9zk37FGzY2ggKHGixGaKOOcHtWS76D1TPTPSY5XgyM2VNk2ilOY29YIvpMmY6x-DwDWPzJASVoIAS03KR0ZbFv5yABucowrXqP0SkjkUq0LRA97W2kJmW3orOo4VZvcXwCkv51KUzxjgmVc4jcE-XxPBWple1Yevd_tJZmI3DDBYv13umS_vd5XjQyEvmvsHtUkFu7D10ApkqcDomP4yGhss4jvfVGBdVSyAI75kfAeDvstqFZQyOND0gj_RW2U48HJWLffO5tAnWW-_WoJ0tlrqnTCQ2-g6CVoLFXtPHcOvW0qZ3C29vKHmH8bXoMbtDzv_yjy9aFwWSC1NuBCvpDvnW0amaLXPzCToFK_bQ=w1920-h789-no?authuser=0");
+	background-size:100%;
+	   background-repeat: no-repeat;
+	background-color:#E2EFE1   ;
+}
+
+
+#iop{
+	padding-left:150px;
+	padding-top:100px;
+	width:446px;
+	height:500px;
+		
+}
+
+
+.m{
+	height:300px;
+	width:250px;
+	/* margin-left:30px;
+	margin-right:20px; */
+	text-align: justify;
+	
+}
+
+
+/* .fa-camera-retro { line-height: inherit;justify-content:center;} */
+
+.gh{
+	text-align:center;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+	margin-top:50px;
+	margin-bottom:20px;
+}
+
+#ui{
+	/* height:500px; */
+	width:500px;
+	/* background-color:red; */
+	border: 2px red solid;
+	    margin-left: auto;
+    margin-right: auto;
+	padding:20px;
+}
+
+#uii{
+	/* background-color: pink; */
+    /* padding-top: 30px;
+	padding:10px; */
+    /* padding-bottom: 20px; */
+}
+
+.fa-trash { font-family: FontAwesome, ‘Helvetica Neue’, Helvetica, Arial, sans-serif; }

@@ -1,0 +1,24 @@
+<%- include("partials/header") %>
+
+	
+<h1 id="lkj" >
+		<u>Campground Lists</u>
+	</h1>
+<div class="container row">
+	
+	<%camp.forEach(function(camp){%>
+
+	<div id='gf' style="padding-left: 100px;">
+		<img  id="aq" src=<%=camp.images%> width="150px" height="100px">
+		<div id="po">
+			<p id="lk1"><a href="/campground/<%=camp.id%>"><%=camp.name%></a></p>
+			<p id="lk2"><%=camp.data%></p>
+			<p id="lk3">-<%=camp.author.username%></p>
+		</div>
+	</div><%})%>
+</div>
+
+
+
+
+<%- include("partials/footer") %>

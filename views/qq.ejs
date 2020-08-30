@@ -1,0 +1,70 @@
+<%- include("partials/header") %>
+
+<div class="container">
+	<div class="row">
+		
+			<p class="lead">
+				<h1 id="w"><%=camp.name%></h1>
+				
+			</p><div class="col-5">
+			<div class="list-group">
+				<li class="list-group-item">Info 1</li>
+				<li class="list-group-item">Info 1</li>
+			</div>
+		</div>
+	
+	
+	
+	<div class="col-12 ff">
+		<div class="thumbnail">
+			<img class="img-responsive" src="<%=camp.images%>">
+			<div class="caption-full">
+				<p><strong><%=camp.author.username%></strong><br>
+					
+					
+					<p id="q" class="container">	<%=camp.data%>
+						<%if(currentUser && camp.author.id.equals(currentUser._id)){%>
+						<div class="container">	<br><br><a id="as" type="button" class="btn btn-primary" 						 									href="/campground/<%=camp._id%>/edit">Update</a>
+							
+						<form action="/campground/<%=camp._id%>?_method=DELETE" method="post"><button type="submit" 									class="btn btn-danger">Delete</button></form> <%}%>
+
+				</div></div></div></div>
+</p><br><br><div class="container jd">
+	
+					<a href="/campground/<%=camp._id%>/comments/new">add comment</a>
+					<% camp.comments.forEach(function(comment){%>
+			
+					<p><strong><%=comment.author.username%></strong><br><%=comment.text%><br><%if(currentUser && comment.author.id.equals(currentUser._id)){%>
+						<div class="kj">
+							<a id="as" type="button" class="btn btn-primary" href="/campground/<%=camp._id%>/comments/<%=comment._id%>">edit</a>
+						<form action="/campground/<%=camp._id%>/comments/<%=comment.id%>?_method=DELETE" method="post">
+							<input type="submit" class="btn btn-danger" value="delete"></form><%}%></div>
+
+						
+						<br></p>
+			
+				<%})%>
+	
+				</p></div>
+			<!-- </div>
+		</div>
+	</div> -->
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+<%- include("partials/footer") %>

@@ -1,0 +1,24 @@
+<%- include("partials/header") %>
+
+<div class="container">
+<form action="/campground/<%=camp._id%>?_method=PUT" method="post">
+  <div class="form-group">
+    	<label>Campsite</label>
+    	<input type="text" class="form-control" name="camps[name]" value="<%=camp.name%>">
+  </div>
+  <div class="form-group">
+    	<label>Image Link</label>
+    	<input type="text" class="form-control" name="camps[images]" value="<%=camp.images%>">
+  </div>
+  <div class="form-group">
+    	<label>Description</label>
+	  	<textarea class="form-control" name="camps[data]" rows="5"><%=camp.data%></textarea>
+    	<!-- <input type="text" class="form-control" name="data" placeholder="data"> -->
+  </div>
+  <button>
+		Update Camp
+  </button> 
+<a href="/campground/<%=camp._id%>">Exit</a>
+	</form></div>
+
+<%- include("partials/footer") %>

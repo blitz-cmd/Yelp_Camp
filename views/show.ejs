@@ -1,0 +1,71 @@
+<%- include("partials/header") %>
+
+
+<div class="container">
+	<div>
+		<h1><%=camp.name%></h1>
+	</div>
+
+	
+		<div>
+			<img src="<%=camp.images%>" class="center" height: 393px; width: 560px;>
+			
+		</div>
+	
+		<div>
+			<p style='text-align:justify;'>	<%=camp.data%>	<strong><p style="text-align:right;">
+				-<%=camp.author.username%></strong>
+				</p></p>
+		</div>
+	
+	
+	<div id="ui">
+		<h3 style="text-align:center">
+			User Review
+		</h3>
+		<% camp.comments.forEach(function(comment){%>
+		
+		<p><strong><%=comment.author.username%></strong>
+			<br>
+			<%=comment.text%>
+			<%if(currentUser && camp.author.id.equals(currentUser._id)){%>
+			<!-- <a class="fas fa-trash" ></a> -->			
+			<a style="color:black" class="fas fa-edit" href="/campground/<%=camp._id%>/comments/<%=comment._id%>"></a>
+		<form action="/campground/<%=camp._id%>/comments/<%=comment.id%>?_method=DELETE" method="post">
+							<input type="submit" class="btn fas fa-trash" value="&#xf1f8;"></form><%}%>
+		
+		<hr></p><%})%>
+		
+		<div id="uii">
+			
+		
+		<form action="/campground/<%=camp._id%>/comments/" method="post">
+			  <!-- <div class="form-group">
+					<label>Author</label>
+					<input type="text" class="form-control" name="author">
+			  </div> -->
+			  <div class="form-group">
+					<!-- <label>Comment</label> -->
+				  <textarea class="form-control" placeholder="enter your comment..." rows="2" name="text"></textarea>
+			  </div>
+<div style="padding-top: 10px;padding-bottom: 10px;">
+			
+			  <button>
+					Publish
+			  </button> </div>
+			<!-- <a href="/">Exit</a> -->
+				</form></div>
+		
+		</div>
+	</div>
+
+</div>
+
+
+
+
+
+
+
+
+<%- include("partials/footer") %>
